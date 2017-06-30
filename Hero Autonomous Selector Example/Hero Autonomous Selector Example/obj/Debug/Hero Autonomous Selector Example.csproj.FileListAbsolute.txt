@@ -1,0 +1,34 @@
+C:\Users\Gia\Documents\Anand\GitHub\Hero Autonomous Selector Example\Hero Autonomous Selector Example\obj\Debug\Hero Autonomous Selector Example.csprojResolveAssemblyReference.cache
+C:\Users\Gia\Documents\Anand\GitHub\Hero Autonomous Selector Example\Hero Autonomous Selector Example\obj\Debug\TinyCLR_DebugReferences.cache
+C:\Users\Gia\Documents\Anand\GitHub\Hero Autonomous Selector Example\Hero Autonomous Selector Example\obj\Debug\Hero_Autonomous_Selector_Example.Properties.Resources.resources
+C:\Users\Gia\Documents\Anand\GitHub\Hero Autonomous Selector Example\Hero Autonomous Selector Example\obj\Debug\Hero Autonomous Selector Example.csproj.GenerateResource.Cache
+C:\Users\Gia\Documents\Anand\GitHub\Hero Autonomous Selector Example\Hero Autonomous Selector Example\obj\Debug\Hero_Autonomous_Selector_Example.Properties.Resources.tinyresources
+C:\Users\Gia\Documents\Anand\GitHub\Hero Autonomous Selector Example\Hero Autonomous Selector Example\obj\Debug\TinyResGen.cache
+C:\Users\Gia\Documents\Anand\GitHub\Hero Autonomous Selector Example\Hero Autonomous Selector Example\bin\Debug\le\Hero Autonomous Selector Example.exe
+C:\Users\Gia\Documents\Anand\GitHub\Hero Autonomous Selector Example\Hero Autonomous Selector Example\bin\Debug\be\Hero Autonomous Selector Example.exe
+C:\Users\Gia\Documents\Anand\GitHub\Hero Autonomous Selector Example\Hero Autonomous Selector Example\bin\Debug\le\Hero Autonomous Selector Example.pdb
+C:\Users\Gia\Documents\Anand\GitHub\Hero Autonomous Selector Example\Hero Autonomous Selector Example\bin\Debug\be\Hero Autonomous Selector Example.pdb
+C:\Users\Gia\Documents\Anand\GitHub\Hero Autonomous Selector Example\Hero Autonomous Selector Example\bin\Debug\Hero Autonomous Selector Example.exe
+C:\Users\Gia\Documents\Anand\GitHub\Hero Autonomous Selector Example\Hero Autonomous Selector Example\bin\Debug\Hero Autonomous Selector Example.pdb
+C:\Users\Gia\Documents\Anand\GitHub\Hero Autonomous Selector Example\Hero Autonomous Selector Example\bin\Debug\le\Hero Autonomous Selector Example.pe
+C:\Users\Gia\Documents\Anand\GitHub\Hero Autonomous Selector Example\Hero Autonomous Selector Example\bin\Debug\le\Hero Autonomous Selector Example.pdbx
+C:\Users\Gia\Documents\Anand\GitHub\Hero Autonomous Selector Example\Hero Autonomous Selector Example\bin\Debug\be\Hero Autonomous Selector Example.pe
+C:\Users\Gia\Documents\Anand\GitHub\Hero Autonomous Selector Example\Hero Autonomous Selector Example\bin\Debug\be\Hero Autonomous Selector Example.pdbx
+C:\Users\Gia\Documents\Anand\GitHub\Hero Autonomous Selector Example\Hero Autonomous Selector Example\bin\Debug\LE\CTRE.pe
+C:\Users\Gia\Documents\Anand\GitHub\Hero Autonomous Selector Example\Hero Autonomous Selector Example\bin\Debug\LE\ctre_netmf_native.pe
+C:\Users\Gia\Documents\Anand\GitHub\Hero Autonomous Selector Example\Hero Autonomous Selector Example\bin\Debug\BE\CTRE.pe
+C:\Users\Gia\Documents\Anand\GitHub\Hero Autonomous Selector Example\Hero Autonomous Selector Example\bin\Debug\BE\ctre_netmf_native.pe
+C:\Users\Gia\Documents\Anand\GitHub\Hero Autonomous Selector Example\Hero Autonomous Selector Example\bin\Debug\LE\CTRE.pdbx
+C:\Users\Gia\Documents\Anand\GitHub\Hero Autonomous Selector Example\Hero Autonomous Selector Example\bin\Debug\LE\ctre_netmf_native.pdbx
+C:\Users\Gia\Documents\Anand\GitHub\Hero Autonomous Selector Example\Hero Autonomous Selector Example\bin\Debug\BE\CTRE.pdbx
+C:\Users\Gia\Documents\Anand\GitHub\Hero Autonomous Selector Example\Hero Autonomous Selector Example\bin\Debug\BE\ctre_netmf_native.pdbx
+C:\Users\Gia\Documents\Anand\GitHub\Hero Autonomous Selector Example\Hero Autonomous Selector Example\bin\Debug\CTRE.dll
+C:\Users\Gia\Documents\Anand\GitHub\Hero Autonomous Selector Example\Hero Autonomous Selector Example\bin\Debug\ctre_netmf_native.dll
+C:\Users\Gia\Documents\Anand\GitHub\Hero Autonomous Selector Example\Hero Autonomous Selector Example\bin\Debug\CTRE.pdb
+C:\Users\Gia\Documents\Anand\GitHub\Hero Autonomous Selector Example\Hero Autonomous Selector Example\bin\Debug\ctre_netmf_native.pdb
+C:\Users\Gia\Documents\Anand\GitHub\Hero Autonomous Selector Example\Hero Autonomous Selector Example\obj\Debug\be\Hero Autonomous Selector Example.pe
+C:\Users\Gia\Documents\Anand\GitHub\Hero Autonomous Selector Example\Hero Autonomous Selector Example\obj\Debug\be\Hero Autonomous Selector Example.pdbx
+C:\Users\Gia\Documents\Anand\GitHub\Hero Autonomous Selector Example\Hero Autonomous Selector Example\obj\Debug\le\Hero Autonomous Selector Example.pe
+C:\Users\Gia\Documents\Anand\GitHub\Hero Autonomous Selector Example\Hero Autonomous Selector Example\obj\Debug\le\Hero Autonomous Selector Example.pdbx
+C:\Users\Gia\Documents\Anand\GitHub\Hero Autonomous Selector Example\Hero Autonomous Selector Example\obj\Debug\Hero Autonomous Selector Example.exe
+C:\Users\Gia\Documents\Anand\GitHub\Hero Autonomous Selector Example\Hero Autonomous Selector Example\obj\Debug\Hero Autonomous Selector Example.pdb
