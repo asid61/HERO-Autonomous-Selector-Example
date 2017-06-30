@@ -18,9 +18,12 @@ Note that you can change the names of the 10 selectable autonomous modes by edit
 You can have up to 10 unique modes. 
 
 # Usage
-Using the autonomous selector is simple. Just press the button onboard the HERO to move the yellow selector arrow down the list. The HERO will send a number to the RoboRIO over CAN (0-9) representing the selected mode; 0 is at the top o the list, and 9 is at the bottom. This range will be reduced if fewer than 10 modes are used. The RoboRIO must be programmed to send the same number bac to the HERO, which will update the green check mark. 
-![Correct](Images/correct.jpg]
+Using the autonomous selector is simple. Just press the button onboard the HERO to move the yellow selector arrow down the list. The HERO will send a number to the RoboRIO over CAN (0-9) representing the selected mode; 0 is at the top o the list, and 9 is at the bottom. This range will be reduced if fewer than 10 modes are used. The RoboRIO must be programmed to send the same number back to the HERO, which will update the green check mark. 
+![Correct](Images/correct.jpg | width=480)
 
 This allows the user to see both what the Hero is sending the RoboRIO, and what the RoboRIO sends back as an acknowledgement. If the check mark and arrow point to different autonomous modes, the RoboRIO probably does not have the correct autonomous selected and the code should be checked.
-![Incorrect](Images/incorrect.jpg]
+![Incorrect](Images/incorrect.jpg)
+
+
+The HERO sends a single byte of data representing the selected mode every 100ms. It sends using the Arbitration ID 0x1E040000. THe RoboRIO should send the same number back in a single byte on the Arbitration ID 0x1E040001. Note that this is **not** the same as a Talon ID.
 
