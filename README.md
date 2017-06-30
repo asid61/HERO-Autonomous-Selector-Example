@@ -25,5 +25,7 @@ This allows the user to see both what the Hero is sending the RoboRIO, and what 
 ![Incorrect](Images/incorrect.jpg)
 
 
-The HERO sends a single byte of data representing the selected mode every 100ms. It sends using the Arbitration ID 0x1E040000. THe RoboRIO should send the same number back in a single byte on the Arbitration ID 0x1E040001. Note that this is **not** the same as a Talon ID.
+The HERO sends a single byte of data representing the selected mode every 100ms. The HERO sends this data using the Arbitration ID 0x1E040000. THe RoboRIO should send the same number back in a single byte on the Arbitration ID 0x1E040001 to aknowledge that it has selected h correct autonomous mode. Note that this is **not** the same as a Talon ID.
+
+Here is a code snippet of how the CAN implmenation on the RoboRIO should be set up for this example in Java:
 
