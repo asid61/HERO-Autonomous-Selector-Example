@@ -1,4 +1,27 @@
-﻿using System;
+﻿/*
+*  Software License Agreement
+*
+* Copyright (C) Cross The Road Electronics.  All rights
+* reserved.
+* 
+* Cross The Road Electronics (CTRE) licenses to you the right to 
+* use, publish, and distribute copies of CRF (Cross The Road) firmware files (*.crf) and Software
+* API Libraries ONLY when in use with Cross The Road Electronics hardware products.
+* 
+* THE SOFTWARE AND DOCUMENTATION ARE PROVIDED "AS IS" WITHOUT
+* WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT
+* LIMITATION, ANY WARRANTY OF MERCHANTABILITY, FITNESS FOR A
+* PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT SHALL
+* CROSS THE ROAD ELECTRONICS BE LIABLE FOR ANY INCIDENTAL, SPECIAL, 
+* INDIRECT OR CONSEQUENTIAL DAMAGES, LOST PROFITS OR LOST DATA, COST OF
+* PROCUREMENT OF SUBSTITUTE GOODS, TECHNOLOGY OR SERVICES, ANY CLAIMS
+* BY THIRD PARTIES (INCLUDING BUT NOT LIMITED TO ANY DEFENSE
+* THEREOF), ANY CLAIMS FOR INDEMNITY OR CONTRIBUTION, OR OTHER
+* SIMILAR COSTS, WHETHER ASSERTED ON THE BASIS OF CONTRACT, TORT
+* (INCLUDING NEGLIGENCE), BREACH OF WARRANTY, OR OTHERWISE
+*/
+
+using System;
 using System.Threading;
 using Microsoft.SPOT;
 using Microsoft.SPOT.Hardware;
@@ -12,6 +35,8 @@ namespace Hero_Autonomous_Selector_Example
         static string[] autonList = { "Autonomous 0", "Autonomous 1", "Autonomous 2", "Autonomous 3", "Autonomous 4",
             "Autonomous 5", "Autonomous 6", "Autonomous 7", "Autonomous 8", "Autonomous 9" }; //up to 15 characters per auton mode, change this to change headings! Can be up to 10 strings long.
 
+        static OnboardEEPROM eeprom = OnboardEEPROM.Instance;
+
         static Font SMALLFONT = Properties.Resources.GetFont(Properties.Resources.FontResources.small); //defines the font to be used
         static DisplayModule.OrientationType PORTRAIT = DisplayModule.OrientationType.Portrait; //sets the orientation of the display
 
@@ -24,6 +49,7 @@ namespace Hero_Autonomous_Selector_Example
 
         static uint arbid = 0x1E040000; //CAN id of the auton selector Hero, big-endian
         static uint RIOid = 0x1E040001; //CAN id of the RIO sending messages, big-endian
+        static ulong eepromAddr = 128;
 
         private static void sendAuton(uint data, uint len, uint freq) //sends data to RoboRIO
         {
@@ -47,7 +73,9 @@ namespace Hero_Autonomous_Selector_Example
         /* main functions */
         private static void runForever() //runs forever
         {
-            uint selectedAuton = 0; //inialize the selected auton to 0
+            byte [] readData = new byte[4];
+            eeprom.ReadBytes(eepromAddr, readData, 4);
+            uint selectedAuton = (uint)(readData[0] % autonList.Length); //inialize the selected auton to 0
             uint lastSelect = 0; //last selected auton
             bool pressed = false; //button debounce stuff
             bool lastPress = false; //button debounce stuff
@@ -75,6 +103,9 @@ namespace Hero_Autonomous_Selector_Example
                 {
                     selectedAuton++; //move to next auton
                     selectedAuton = selectedAuton % (uint)list.Length; //wraps the cursor around
+                    byte [] toWrite = new byte[4];
+                    toWrite[0] = (byte)selectedAuton;
+                    eeprom.WriteBytes(eepromAddr, toWrite, 4);
                 }
                 lastPress = pressed; //debounce
 
