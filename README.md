@@ -33,3 +33,24 @@ The HERO sends a single byte of data representing the selected mode every 100ms.
 
 Here is a code snippet of how the CAN implmenation on the RoboRIO should be set up for this example in Java:
 
+```
+ByteBuffer targetedMessageID = ByteBuffer.allocateDirect(4);//Must be direct
+targetedMessageID.order(ByteOrder.LITTLE_ENDIAN);
+targetedMessageID.asIntBuffer().put(0, 0x1E040000);
+ByteBuffer timeStamp = ByteBuffer.allocateDirect(4);
+ByteBuffer j = null;
+try
+{
+	//Return call is data, j is assigned
+    j = CANJNI.FRCNetCommCANSessionMuxReceiveMessage(targetedMessageID.asIntBuffer(),
+		0xFFFFFFFF, timeStamp);
+    //Send back data for module
+    CANJNI.FRCNetCommCANSessionMuxSendMessage(0x1E040001, j, 100);
+    
+    //Do auton switching here, outside of try block j will be interpreted as null
+}
+catch(Exception e)
+{ 
+	//No CAN message, not a bad thing
+}
+```
